@@ -87,15 +87,15 @@ p {
     flex: 1;
 }
 
-.mainConcept .fbox p {
+.mainConcept .fbox span {
     position: relative;
     font-size: 35px;
     font-weight: 700;
     margin: auto;
 }
 
-.mainConcept .fbox p::before,
-.mainConcept .fbox p::after {
+.mainConcept .fbox span::before,
+.mainConcept .fbox span::after {
     content: "";
     position: absolute;
     top: -50px;
@@ -106,7 +106,7 @@ p {
     background: #000;
 }
 
-.mainConcept .fbox p::after {
+.mainConcept .fbox span::after {
     top: 90px;
 }
 
