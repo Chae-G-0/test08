@@ -94,7 +94,8 @@ p {
     margin: auto;
 }
 
-.mainConcept .fbox p::before {
+.mainConcept .fbox p::before,
+.mainConcept .fbox p::after {
     content: "";
     position: absolute;
     top: -50px;
@@ -106,14 +107,7 @@ p {
 }
 
 .mainConcept .fbox p::after {
-    content: "";
-    position: absolute;
     top: 90px;
-    left: -30px;
-    transform: translateY(-50%);
-    width: 440px;
-    height: 1px;
-    background: #000;
 }
 
 .mainConcept .item01 {
