@@ -35,7 +35,7 @@ p {
     width: 100%;
 }
 
-.mainTv .fbox {
+.fbox {
     display: flex;
     gap: 30px;
 }
@@ -81,4 +81,51 @@ p {
     font-size: 13px;
     font-weight: 500;
     color: #555;
+}
+
+.mainConcept .fbox figure {
+    flex: 1;
+}
+
+.mainConcept .fbox p {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.mainConcept .fbox p::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    transform: translateY(-50%);
+    width: 440px;
+    height: 1px;
+    background: #000;
+}
+
+.mainConcept .fbox p::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: -30px;
+    transform: translateY(-50%);
+    width: 440px;
+    height: 1px;
+    background: #000;
+}
+
+.mainConcept .item01 {
+    background: url(../img/detail02.jpg) no-repeat center center/cover;
+    height: 500px;
+}
+
+.mainConcept .item02 {
+    margin: auto 0;
+}
+
+.mainConcept .item03 {
+    background: url(../img/detail01.jpg) no-repeat center center/cover;
+    height: 500px;
 }
