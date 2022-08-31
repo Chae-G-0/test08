@@ -61,13 +61,17 @@ p {
     font-weight: 500;
 }
 
+form {
+    position: relative;
+}
+
 .sf {
     width: 300px;
 }
 
 .sf input[name="search"] {
     outline: none;
-    border: 1px solid #444;
+    border: 1px solid #666;
     border-radius: 20px;
     padding: 0 0 0 10px;
 }
@@ -77,6 +81,10 @@ p {
 }
 
 .sf button {
+    position: absolute;
+    top: 32%;
+    right: 22%;
+    transform: translateX(-50%);
     border: none;
     background: none;
     cursor: pointer;
@@ -131,7 +139,7 @@ p {
     border-radius: 15px;
     padding: 20px;
     background: #f9f9f9;
-    
+    box-shadow: 3px 3px 3px #f3f3f3;
 }
 
 .mainTv .fbox .option {
@@ -175,6 +183,7 @@ p {
 
 .mainConcept .fbox figure {
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .mainConcept .fbox span {
@@ -185,32 +194,33 @@ p {
     margin: 0 0 30px 0;
 }
 
-/* .mainConcept .fbox span::before,
-.mainConcept .fbox span::after {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: -30px;
-    transform: translateY(-50%);
-    width: 440px;
-    height: 1px;
-    background: #000;
+.ver {
+    flex-direction: column;
+    flex: 1.5;
 }
-
-.mainConcept .fbox span::after {
-    top: 90px;
-} */
 
 .mainConcept .item01 {
     background: url(../img/detail02.jpg) no-repeat center center/cover;
     height: 500px;
+    flex: 1;
 }
 
 .mainConcept .item02 {
-    margin: auto 0;
+    background: url(../img/concept01.jpg) no-repeat center center/cover;
+    height: 300px;
 }
 
 .mainConcept .item03 {
+    margin: auto 0;
+}
+
+.mainConcept .item04 {
+    margin: auto 0 0 0;
+    background: url(../img/concept02.jpg) no-repeat center center/cover;
+    height: 300px;
+}
+
+.mainConcept .item05 {
     background: url(../img/detail01.jpg) no-repeat center center/cover;
     height: 500px;
 }
