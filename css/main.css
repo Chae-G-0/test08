@@ -72,9 +72,10 @@ form {
 
 .sf input[name="search"] {
     outline: none;
-    border: 1px solid #666;
+    border: 1px solid #777;
     border-radius: 20px;
     padding: 0 0 0 10px;
+    vertical-align: 0%;
 }
 
 .sf input[name="search"]:focus::placeholder {
@@ -83,7 +84,7 @@ form {
 
 .sf button {
     position: absolute;
-    top: 32%;
+    top: 28%;
     right: 5%;
     transform: translateX(-50%);
     border: none;
@@ -95,6 +96,7 @@ form {
 }
 
 .mainVisual {
+    display: flex;
     padding: 0;
 }
 
@@ -133,6 +135,10 @@ form {
     background: url(../img/tv03.jpg) no-repeat center center / cover;
 }
 
+.mainVisual > div {
+    flex: 1;
+}
+
 .mainTv {
 }
 
@@ -151,10 +157,20 @@ form {
 }
 
 .mainTv .fbox .txt {
+    position: relative;
     text-align: center;
 }
 
+.mainTv .fbox .txt h3 {
+    margin: 0 0 40px 0;
+}
+
 .mainTv .fbox .txt p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
     font-size: 17px;
     font-weight: 500;
     margin: 0 0 15px 0;
@@ -177,6 +193,15 @@ form {
     font-size: 13px;
     font-weight: 500;
     color: #555;
+}
+
+.mainTv .fbox .option > div a.on {
+    border: 1px solid rgb(129, 181, 233);
+    /* #0d6efd */
+}
+
+.mainTv .txt p.on {
+    opacity: 1;
 }
 
 .mainConcept {
@@ -302,10 +327,43 @@ table {
 .Footer {
 }
 
+.Footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Footer {
     padding: 50px 0;
+    text-align: center;
 }
 
 .Footer h2 {
     margin: 0;
+    font-size: 0;
+    line-height: 60px;
+}
+
+.Footer dd {
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    color: #999;
+}
+
+.Footer .ver {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #444;
+}
+
+.Footer .sns i {
+    background: #555;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 17px;
+    color: #fff;
 }
