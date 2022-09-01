@@ -63,6 +63,7 @@ p {
 
 form {
     position: relative;
+    padding: 0 0 0 50px;
 }
 
 .sf {
@@ -83,7 +84,7 @@ form {
 .sf button {
     position: absolute;
     top: 32%;
-    right: 22%;
+    right: 5%;
     transform: translateX(-50%);
     border: none;
     background: none;
@@ -182,16 +183,15 @@ form {
 }
 
 .mainConcept .fbox figure {
-    flex: 1;
     flex-wrap: wrap;
 }
 
 .mainConcept .fbox span {
     display: block;
-    font-size: 27px;
+    font-size: 21px;
     font-weight: 700;
     text-align: center;
-    margin: 0 0 30px 0;
+    margin: 0 0 15px 0;
 }
 
 .ver {
@@ -200,29 +200,22 @@ form {
 }
 
 .mainConcept .item01 {
-    background: url(../img/detail02.jpg) no-repeat center center/cover;
+    background: url(../img/desc01.jpg) no-repeat center right 25% / cover;
     height: 500px;
     flex: 1;
 }
 
 .mainConcept .item02 {
-    background: url(../img/concept01.jpg) no-repeat center center/cover;
-    height: 300px;
+    height: 200px;
+    padding: 50px 0;
 }
 
 .mainConcept .item03 {
-    margin: auto 0;
-}
-
-.mainConcept .item04 {
-    margin: auto 0 0 0;
-    background: url(../img/concept02.jpg) no-repeat center center/cover;
+    background: url(../img/left02.jpg) no-repeat center center/cover;
     height: 300px;
 }
 
-.mainConcept .item05 {
-    background: url(../img/detail01.jpg) no-repeat center center/cover;
-    height: 500px;
+.mainFunc {
 }
 
 .mainFunc .fbox div {
@@ -257,7 +250,6 @@ form {
 
 .mainFunc p {
     font-size: 17px;
-
     text-align: left;
     margin: 0 0 30px 0;
 }
@@ -271,6 +263,7 @@ form {
 }
 
 table {
+    width: 100%;
     margin: 0 auto;
     border-top: 2px solid #333;
     border-spacing: 0;
