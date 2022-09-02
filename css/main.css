@@ -196,8 +196,7 @@ form {
 }
 
 .mainTv .fbox .option > div a.on {
-    border: 1px solid rgb(129, 181, 233);
-    /* #0d6efd */
+    border: 1px solid #0d6efd;
 }
 
 .mainTv .txt p.on {
@@ -207,16 +206,24 @@ form {
 .mainConcept {
 }
 
+.mainConcept .fbox {
+    gap: 0;
+}
+
 .mainConcept .fbox figure {
     flex-wrap: wrap;
 }
 
-.mainConcept .fbox span {
+.mainConcept span {
     display: block;
     font-size: 21px;
     font-weight: 700;
     text-align: center;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
+}
+
+.mainConcept p {
+    margin: 0 0 20px 0;
 }
 
 .ver {
@@ -226,13 +233,13 @@ form {
 
 .mainConcept .item01 {
     background: url(../img/desc01.jpg) no-repeat center right 25% / cover;
-    height: 500px;
+    height: 600px;
     flex: 1;
 }
 
 .mainConcept .item02 {
-    height: 200px;
-    padding: 50px 0;
+    background: url(../img/detail03.jpg) no-repeat center center/cover;
+    height: 300px;
 }
 
 .mainConcept .item03 {
@@ -341,7 +348,8 @@ table {
 .Footer h2 {
     margin: 0;
     font-size: 0;
-    line-height: 60px;
+    line-height: 1;
+    margin: 0 0 20px 0;
 }
 
 .Footer dd {
