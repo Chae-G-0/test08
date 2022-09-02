@@ -206,10 +206,6 @@ form {
 .mainConcept {
 }
 
-.mainConcept .fbox {
-    gap: 0;
-}
-
 .mainConcept .fbox figure {
     flex-wrap: wrap;
 }
@@ -227,6 +223,8 @@ form {
 }
 
 .ver {
+    display: flex;
+    gap: 30px;
     flex-direction: column;
     flex: 1.5;
 }
@@ -239,12 +237,12 @@ form {
 
 .mainConcept .item02 {
     background: url(../img/detail03.jpg) no-repeat center center/cover;
-    height: 300px;
+    height: 285px;
 }
 
 .mainConcept .item03 {
     background: url(../img/left02.jpg) no-repeat center center/cover;
-    height: 300px;
+    height: 285px;
 }
 
 .mainFunc {
